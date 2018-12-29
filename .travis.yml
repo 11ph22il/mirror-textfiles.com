@@ -1,8 +1,8 @@
 language: python
 
 script:
-    - mv textfiles.com public 
-    - echo 'textfiles.mirror.strm.sh' > public/CNAME
+    - mv textfiles.com/* .
+    - echo 'textfiles.mirror.strm.sh' CNAME
 
 # Deploy to GitHub pages
 deploy:
