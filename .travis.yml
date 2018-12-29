@@ -1,7 +1,7 @@
 language: python
 
 script:
-    - mv CNAME > public/CNAME
+    - mv CNAME textfiles.com/CNAME
 
 # Deploy to GitHub pages
 deploy:
