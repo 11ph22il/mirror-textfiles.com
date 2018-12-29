@@ -4,6 +4,8 @@ script:
     - cp -ar textfiles.com public 
     - touch public/.nojekyll
     - echo 'textfiles.mirror.strm.sh' > public/CNAME
+    - find . -name "*.1" -exec rename 's/\.1$/\.html/' '{}' \;
+    - find . -name '*.html' -exec sed 's/\.1/\.1\.html/g' -i {} +
 
 # Deploy to GitHub pages
 deploy:
