@@ -1,8 +1,7 @@
 language: python
 
 script:
-    - mv textfiles.com public/
-    - echo 'strm.sh' > public/CNAME
+    - mv CNAME > public/CNAME
 
 # Deploy to GitHub pages
 deploy:
