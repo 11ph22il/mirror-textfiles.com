@@ -1,7 +1,7 @@
 language: python
 
 script:
-    - cp -var textfiles.com public 
+    - cp -ar textfiles.com public 
     - cp CNAME public/CNAME
 
 # Deploy to GitHub pages
