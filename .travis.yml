@@ -2,7 +2,7 @@ language: python
 
 script:
     - cp -ar textfiles.com public 
-    - cp CNAME public/CNAME
+    - echo 'textfiles.mirror.strm.sh' > public/CNAME
 
 # Deploy to GitHub pages
 deploy:
