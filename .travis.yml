@@ -1,13 +1,14 @@
 language: python
 
 script:
-    - mv CNAME textfiles.com/CNAME
+    - cp -var textfiles.com public 
+    - cp CNAME public/CNAME
 
 # Deploy to GitHub pages
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: textfiles.com 
+  local_dir: public
   on:
     branch: master
