@@ -2,6 +2,7 @@ language: python
 
 script:
     - cp -ar textfiles.com public 
+    - touch .nojekyll
     - echo 'textfiles.mirror.strm.sh' > public/CNAME
 
 # Deploy to GitHub pages
