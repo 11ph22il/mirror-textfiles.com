@@ -1,14 +1,8 @@
-language: python
-
-script:
-    - mv textfiles.com/* .
-    - echo 'textfiles.mirror.strm.sh' CNAME
-
 # Deploy to GitHub pages
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: public
+  local_dir: textfiles.com 
   on:
-branch: master
+    branch: master
